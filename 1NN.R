@@ -1,40 +1,40 @@
-##Евклидово расстояние
+##Р•РІРєР»РёРґРѕРІРѕ СЂР°СЃСЃС‚РѕСЏРЅРёРµ
 euclideanDistance <- function(u, v) 
 { 
   sqrt(sum((u - v)^2)) 
 } 
-##Сортируем объекты согласно расстояния до объекта z
+##Г‘Г®Г°ГІГЁГ°ГіГҐГ¬ Г®ГЎГєГҐГЄГІГ» Г±Г®ГЈГ«Г Г±Г­Г® Г°Г Г±Г±ГІГ®ГїГ­ГЁГї Г¤Г® Г®ГЎГєГҐГЄГІГ  z
 sortObjectByDist <- function(xl, z, metricFunction = euclideanDistance) 
 { 
   l <- dim(xl)[1] 
   n <- dim(xl)[2] - 1 
-  ##Создаем матрицу расстояний
+  ##Г‘Г®Г§Г¤Г ГҐГ¬ Г¬Г ГІГ°ГЁГ¶Гі Г°Г Г±Г±ГІГ®ГїГ­ГЁГ©
   distances <- matrix(NA, l, 2)
   
   for (i in 1:l) 
   { 
     distances[i] <- c(metricFunction(xl[i, 1:n], z)) 
   } 
-  #Сортируем
+  #Г‘Г®Г°ГІГЁГ°ГіГҐГ¬
   orderedXl <- xl[order(distances), ] 
   return (orderedXl) 
 } 
-#Применяем метод 1NN
+#ГЏГ°ГЁГ¬ГҐГ­ГїГҐГ¬ Г¬ГҐГІГ®Г¤ 1NN
 NN<-function(xl, z) 
 { 
-  ##Сортируем выборку согласно классифицируемого объекта
+  ##Г‘Г®Г°ГІГЁГ°ГіГҐГ¬ ГўГ»ГЎГ®Г°ГЄГі Г±Г®ГЈГ«Г Г±Г­Г® ГЄГ«Г Г±Г±ГЁГґГЁГ¶ГЁГ°ГіГҐГ¬Г®ГЈГ® Г®ГЎГєГҐГЄГІГ 
   orderedXl<- sortObjectByDist(xl, z) 
   n<-dim(orderedXl)[2] 
   
   classes <- orderedXl[1, n] 
   return (classes) 
 } 
-##Рисуем выборку
+##ГђГЁГ±ГіГҐГ¬ ГўГ»ГЎГ®Г°ГЄГі
 colors <- c("setosa" = "red", "versicolor" = "green3", "virginica" = "blue") 
 X<-sample(c(1:150), 25, replace=TRUE) 
 xl <- iris[X, 3:5] 
 plot(iris[X, 3:4], pch = 21, bg = colors[xl$Species], col = colors[xl$Species], asp = 1, 
-     xlab = "длина листа", ylab = "ширина листа", main = "Карта классификации для фунции 1NN") 
+     xlab = "Г¤Г«ГЁГ­Г  Г«ГЁГ±ГІГ ", ylab = "ГёГЁГ°ГЁГ­Г  Г«ГЁГ±ГІГ ", main = "ГЉГ Г°ГІГ  ГЄГ«Г Г±Г±ГЁГґГЁГЄГ Г¶ГЁГЁ Г¤Г«Гї ГґГіГ­Г¶ГЁГЁ 1NN") 
 
 x <- 0.6 
 y <- 0 
