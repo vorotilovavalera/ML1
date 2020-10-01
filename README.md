@@ -40,4 +40,9 @@ kNN <- function(xl, z, k)
   return (class) ## возвращаем класс
 }
 ```
+
+![Где картинка?](6NN.png?raw=true "Optional Title")
+
 LeaveOneOut (или LOO) - простая перекрестная проверка, которая необходима, чтобы оценить при каких значениях k алгоритм knn оптимален, и на сколько он ошибается.
+
+![Где картинка?](knn_loo.png?raw=true "Optional Title")
