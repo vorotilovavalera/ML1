@@ -30,7 +30,7 @@ sortObjectsByDist <- function(xl, z, metricFunction = euclideanDistance)#зад�
 }
 ```
 Применяем сам метод KNN:
-```diff
+```R
 kNN <- function(xl, z, k) 
 {
   orderedXl <- sortObjectsByDist(xl, z, euclideanDistance)  ## Сортируем выборку согласно классифицируемого объекта
