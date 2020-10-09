@@ -25,16 +25,16 @@ sortObjectByDist <- function(xl, z, metricFunction = euclideanDistance)
 kwnn <- function(xl, z, k,orderedXl)
 {
   
-  n <- dim(orderedXl)[2] - 1
+  n <- dim(orderedXl)[2] - 1 #размерность выборки по столбцам
   weights = rep(0,3)
   names(weights) <- c("setosa", "versicolor", "virginica")
-  classes <- orderedXl[1:k, n+1]
+  classes <- orderedXl[1:k, n+1] #берем к ближайших соседей
   
   for(i in 1:k)
   {
     weights[classes[i]]<-weightsKWNN(i,k)+weights[classes[i]];
   }
-  class <- names(which.max(weights))
+  class <- names(which.max(weights)) #возвращаем класс, соответствующий максимальному весу
   return (class)
 }
 
