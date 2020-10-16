@@ -135,3 +135,7 @@ LOOPW = function(points, classes, hValues) {
 ```
 Чаще всего применяются 5 типов ядер:
 
+-[Прямоугольное]
+![Где картинка?](формула4.svg?raw=true "Optional Title")
+
+![Где картинка?](Прямоуголное.png?raw=true "Optional Title")
