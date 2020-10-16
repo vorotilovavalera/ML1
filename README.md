@@ -145,4 +145,19 @@ LOOPW = function(points, classes, hValues) {
 
 ![Где картинка?](Треугольное.png?raw=true "Optional Title")
 
-- []
+- Квартическое
+![Где картинка?](формула6.svg?raw=true "Optional Title")
+
+![Где картинка?](Квартическое.png?raw=true "Optional Title")
+
+- Епанечниково
+![Где картинка?](формула7.svg?raw=true "Optional Title")
+
+![Где картинка?](Епанечниково.png?raw=true "Optional Title")
+
+- Гауссовское
+
+![Где картинка?](Гауссовское?raw=true "Optional Title")
+
+
+
