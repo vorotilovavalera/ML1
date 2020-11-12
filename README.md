@@ -241,3 +241,5 @@ getPotentials <- function(xl, h, eps, type_core)
   return (potentials)
 }
 ```
+Ядро Епанечникова
+![Где картинка?](PF/ЕпанечниковоPF.png=true "Optional Title")
