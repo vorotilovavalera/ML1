@@ -140,4 +140,4 @@ main <- function(type_core) {
   drawPlots(xl, classMatrix, potentials, h)
 }
 
-main(core.P)
+main(core.E)
