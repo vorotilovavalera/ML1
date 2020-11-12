@@ -242,4 +242,17 @@ getPotentials <- function(xl, h, eps, type_core)
 }
 ```
 Ядро Епанечникова
-![Где картинка?](PF/ЕпанечниковоPF.png=true "Optional Title")
+
+![Где картинка?](PF/ЕпанечниковоPF.png?raw=true "Optional Title")
+
+Ядро Гауссовское
+
+![Где картинка?](PF/ГауссовскоеPF.png?raw=true "Optional Title")
+
+Ядро Квартическое
+
+![Где картинка?](PF/КвартическоеPF.png?raw=true "Optional Title")
+
+Ядро Треугольное
+
+![Где картинка?](PF/ТреугольноеPF.png?raw=true "Optional Title")
