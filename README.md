@@ -142,26 +142,26 @@ LOOPW = function(points, classes, hValues) {
 - Прямоугольное
 ![Где картинка?](images/формула4.svg?raw=true "Optional Title")
 
-![Где картинка?](Прямоугольное.png?raw=true "Optional Title")
+![Где картинка?](metric/PW/Прямоугольное.png?raw=true "Optional Title")
 
 - Треугольное
 ![Где картинка?](images/формула5.svg?raw=true "Optional Title")
 
-![Где картинка?](Треугольное.png?raw=true "Optional Title")
+![Где картинка?](metric/PW/Треугольное.png?raw=true "Optional Title")
 
 - Квартическое
 ![Где картинка?](images/формула6.svg?raw=true "Optional Title")
 
-![Где картинка?](Квартическое.png?raw=true "Optional Title")
+![Где картинка?](metric/PW/Квартическое.png?raw=true "Optional Title")
 
 - Епанечниково
 ![Где картинка?](images/формула7.svg?raw=true "Optional Title")
 
-![Где картинка?](Епанечниково.png?raw=true "Optional Title")
+![Где картинка?](metric/PW/Епанечниково.png?raw=true "Optional Title")
 
 - Гауссовское
 
-![Где картинка?](Гауссовское.png?raw=true "Optional Title")
+![Где картинка?](metric/PW/Гауссовское.png?raw=true "Optional Title")
 Среди всех классифицированных ядер больше всего выделяется гауссовское ядро. Оно однозначно разделило классы на всей плоскости.
 
 ## Метод потенциальных функций
