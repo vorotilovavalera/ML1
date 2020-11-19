@@ -355,12 +355,27 @@ getPotentials <- function(xl, h, eps, type_core)
 
 5: пока ![Где картинка?](images/stolp9.png?raw=true "Optional Title")
 
-6: Выделить множество объектов, на которых алгоритм ![Где картинка?](images/stolp10.png?aw=true "Optional Title") ошибается: ![Где картинка?](images/stolp11.png?raw=true "Optional Title").
+6: Выделить множество объектов, на которых алгоритм ![Где картинка?](images/stolp10.png?aw=true "Optional Title") ошибается: ![Где картинка?](images/stolp11.png?raw=true "Optional Title")
 
 7: если ![Где картинка?](images/stolp12.png?raw=true "Optional Title") то
 
 8: выход
 
 9: Присоединить к ![Где картинка?](images/stolp15.png?raw=true "Optional Title") объект с наименьшим отступом: ![Где картинка?](images/stolp13.png?raw=true "Optional Title")
+
+Для нахождения отступов используется функция:
+```R
+margin = function(points,classes,point,class){
+  
+  Myclass = points[which(classes==class), ]
+  OtherClass = points[which(classes!=class), ]
+  
+  MyMargin = Parzen(Myclass,point[1:2],1,FALSE)
+  OtherMargin = Parzen(OtherClass,point[1:2],1,FALSE)
+  
+  return(MyMargin-OtherMargin)
+  }
+  ```
+  
 
 # Линейные алгоритмы классификации
