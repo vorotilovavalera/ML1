@@ -376,6 +376,8 @@ margin = function(points,classes,point,class){
   return(MyMargin-OtherMargin)
   }
   ```
+  Отступы для Парзеновского окна выглядят так:
   
+  ![Где картинка?](metric/stolp/отступы.png?raw=true "Optional Title")
 
 # Линейные алгоритмы классификации
