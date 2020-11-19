@@ -351,6 +351,8 @@ getPotentials <- function(xl, h, eps, type_core)
 
 3: ![Где картинка?](images/stolp7.png?raw=true "Optional Title")
 
-4: Взять по одному эталону из каждого класса:  
+4: Взять по одному эталону из каждого класса:  ![Где картинка?](images/stolp8.png?raw=true "Optional Title")
+
+5: 
 
 # Линейные алгоритмы классификации
