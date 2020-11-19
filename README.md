@@ -378,6 +378,11 @@ margin = function(points,classes,point,class){
   ```
   Отступы для Парзеновского окна выглядят так:
   
-  ![Где картинка?](metric/stolp/отступы.png?raw=true "Optional Title")
+  ![Где картинка?](metric/stolp/Отступы.png?raw=true "Optional Title")
+
+Используя метод STOLP, количество эталонных объектов сократилось до 5, скорость работы метода после алгоритма заметно улучшилась.
+
+
+  ![Где картинка?](metric/stolp/STOLP.png?raw=true "Optional Title")
 
 # Линейные алгоритмы классификации
