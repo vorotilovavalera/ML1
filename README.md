@@ -337,4 +337,12 @@ getPotentials <- function(xl, h, eps, type_core)
 
 ![Где картинка?](images/stolp1.png?raw=true "Optional Title") - обучающая выборка;
 
+![Где картинка?](images/stolp2.png?raw=true "Optional Title") - порог фильтрации выбросов;
+
+![Где картинка?](images/stolp3.png?raw=true "Optional Title") - допустимая доля ошибок;
+
+Выход:
+
+Множество опорных объектов ![Где картинка?](images/stolp4.png?raw=true "Optional Title")
+
 # Линейные алгоритмы классификации
