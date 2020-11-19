@@ -388,8 +388,15 @@ margin = function(points,classes,point,class){
 # Линейные алгоритмы классификации
 
 ## Метод опорных векторов
-
+ 
 В настоящее время метод опорных векторов (SVM) считается одним из лучших методов классификации.
 
 ### Линейно разделимая выборка
 
+Пусть ![Где картинка?](images/svm1.png?raw=true "Optional Title"). Рассмотрим линейный классификатор: ![Где картинка?](images/svm2.png?raw=true "Optional Title") с параметрами ![Где картинка?](images/svm3.png?raw=true "Optional Title") и ![Где картинка?](images/svm4.png?raw=true "Optional Title").
+
+Пусть выборка линейно разделима и существуют значения параметров ![Где картинка?](images/svm5.png?raw=true "Optional Title") и ![Где картинка?](images/svm6.png?raw=true "Optional Title"), при которых функционал числа ошибок ![Где картинка?](images/svm8.png?raw=true "Optional Title") принимает нулевое значение. Но тогда разделяющая гиперплоскость не единственна. Будем выбирать ее таким образом, чтобы она отстояла максимально далеко от ближайших к ней точек обоих классов
+
+Заметим, что алгоритм ![Где картинка?](images/svm7.png?raw=true "Optional Title") не изменится, если ![Где картинка?](images/svm5.png?raw=true "Optional Title") и ![Где картинка?](images/svm6.png?raw=true "Optional Title") одновременно умножить на одну и ту же константу. Выберем эту константу так, чтобы выполнялось условие: ![Где картинка?](images/svm9.png?raw=true "Optional Title")
+
+В случае линейно разделимой выборки получим задачу квадратичного программирования: ![Где картинка?](images/svm10.png?raw=true "Optional Title")
