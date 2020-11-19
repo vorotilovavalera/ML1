@@ -383,6 +383,6 @@ margin = function(points,classes,point,class){
 Используя метод STOLP, количество эталонных объектов сократилось до 5, скорость работы метода после алгоритма заметно улучшилась.
 
 
-  ![Где картинка?](metric/stolp/STOLP.png?raw=true "Optional Title")
+  ![Где картинка?](metric/stolp/Stolp.png?raw=true "Optional Title")
 
 # Линейные алгоритмы классификации
