@@ -345,4 +345,12 @@ getPotentials <- function(xl, h, eps, type_core)
 
 Множество опорных объектов ![Где картинка?](images/stolp4.png?raw=true "Optional Title")
 
+1: для всех ![Где картинка?](images/stolp5.png?raw=true "Optional Title") проверить, является ли ![Где картинка?](images/stolp14.png?raw=true "Optional Title") выбросом:
+
+2: если ![Где картинка?](images/stolp6.png?raw=true "Optional Title") то
+
+3: ![Где картинка?](images/stolp7.png?raw=true "Optional Title")
+
+4: Взять по одному эталону из каждого класса:  
+
 # Линейные алгоритмы классификации
