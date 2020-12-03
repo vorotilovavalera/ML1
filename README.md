@@ -444,7 +444,7 @@ A = d/det
 
 Пример работы программы:
 
-![Где картинка?](bayes/naive/Наивный.gif?raw=true "Optional Title")
+![Где картинка?](bayes/naive/Наивный.png?raw=true "Optional Title")
 
 Преимущества:
 	• Простота реализации.
