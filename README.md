@@ -504,6 +504,7 @@ A = d/det
 
 Разделяющая плоскость здается формулой: ![Где картинка?](bayes/LDF/ldf2.svg?raw=true "Optional Title")
 коэффициенты которой находятся следующим образом: ![Где картинка?](bayes/LDF/ldf3.svg?raw=true "Optional Title")
+
 ![Где картинка?](bayes/LDF/ldf4.svg?raw=true "Optional Title")
 
 Программная реализация данной функции нахождения коэффициентов ЛДФ выглядит следующим образом:
@@ -527,7 +528,7 @@ Sigma2 <- matrix(c(2, 0, 0, 2), 2, 2)
 Количество элементов в каждом классе: 50.
 1.Подстановочный алгоритм.
 
-![Где картинка?](bayes/LDF/plud_ldf.png?raw=true "Optional Title")
+![Где картинка?](bayes/LDF/plug_ldf.png?raw=true "Optional Title")
 
 2. ЛДФ алгоритм
 
