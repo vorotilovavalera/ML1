@@ -108,4 +108,4 @@ abline(a = w[3] / w[2], b = -w[1] / w[2], lwd = 2, col = "blue")
 w <- sg.Hebb(xlNorm)     
 abline(a = w[3] / w[2], b = -w[1] / w[2], lwd = 2, col = "red") 
 
-# legend("bottomleft", c("ADALINE", "Правило Хэбба", "Логистическая регрессия"), pch = c(15,15,15), col = c("blue", "red", "black")) 
+ legend("bottomleft", c("ADALINE", "Правило Хэбба", "Логистическая регрессия"), pch = c(10,10,10), col = c("blue", "red", "black")) 
