@@ -581,30 +581,10 @@ Sigma2 <- matrix(c(2, 0, 0, 2), 2, 2)
 
 ## Логистическая регрессия
 
-![Где картинка?](linear/l11.svg?raw=true "Optional Title")- логистическая функция потерь.
-
-![Где картинка?](linear/l12.svg?raw=true "Optional Title")- правило обновления весов, которое называют логистическим, где сигмоидная функция: ![Где картинка?](linear/l13.svg?raw=true "Optional Title")
+Имеет логистическую функцию потерь ![Где картинка?](linear/l11.svg?raw=true "Optional Title") и логистическое правило обновления весов ![Где картинка?](linear/l12.svg?raw=true "Optional Title"), где ![Где картинка?](linear/l13.svg?raw=true "Optional Title") -  сигмоидная функция.
 
 Программная реализация функции потерь и сигмоидной функции:
 
-```R
-##Функция потерь
-lossLog <- function(x)
-{
-return (log2(1 + exp(-x)))
-}
-## Сигмоидная функция
-sigmoidFunction <- function(z)
-{
-return (1 / (1 + exp(-z)))
-}
-```
-
-Правило обновления весов:
-
-```R
-w <- w + eta * xi * yi * sigmoidFunction(-wx * yi)
-```
 Работа алгоритма:
 
 ![Где картинка?](linear/logistic.png?raw=true "Optional Title")
