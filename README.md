@@ -635,6 +635,7 @@ w <- w - eta * (wx - yi) * xi
 ```
 Работа алгоритма:
 
+![Где картинка?](linear/adaline.png?raw=true "Optional Title")
 
 ## Метод опорных векторов
  
