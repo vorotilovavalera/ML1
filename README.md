@@ -583,8 +583,6 @@ Sigma2 <- matrix(c(2, 0, 0, 2), 2, 2)
 
 Имеет логистическую функцию потерь ![Где картинка?](linear/l11.svg?raw=true "Optional Title") и логистическое правило обновления весов ![Где картинка?](linear/l12.svg?raw=true "Optional Title"), где ![Где картинка?](linear/l13.svg?raw=true "Optional Title") -  сигмоидная функция.
 
-Программная реализация функции потерь и сигмоидной функции:
-
 Работа алгоритма:
 
 ![Где картинка?](linear/logistic.png?raw=true "Optional Title")
