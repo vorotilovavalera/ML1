@@ -573,23 +573,8 @@ Sigma2 <- matrix(c(2, 0, 0, 2), 2, 2)
 
 ## Персептрон Розенблатта
 
-![Где картинка?](linear/l9.svg?raw=true "Optional Title") - данную функцию потерь называют кусочно-линейной.
+Имеет кусочно-линейную функцию потерь ![Где картинка?](linear/l9.svg?raw=true "Optional Title") и правило Хебба для обновления весов ![Где картинка?](linear/l10.svg?raw=true "Optional Title") 
 
-![Где картинка?](linear/l10.svg?raw=true "Optional Title") - правило обновления весов, которое называют правилом Хебба.
-Программная реализация функции потерь:
-
-```R
-lossPerceptron <- function(x)
-{
-return (max(-x, 0))
-}
-```
-
-Правило обновления весов:
-
-```R
-w <- w + eta * yi * xi
-```
 Работа алгоритма:
 
 ![Где картинка?](linear/pers.png?raw=true "Optional Title")
