@@ -627,6 +627,17 @@ return (w)
 
 ![Где картинка?](linear/l7.svg?raw=true "Optional Title") и дельта-правило правило обновления весов ![Где картинка?](linear/l8.svg?raw=true "Optional Title")
 
+Программная реализация квадратичной функции потерь:
+```R
+lossQuad <- function(x) 
+{     
+	return ((x-1)^2) 
+}
+```
+Правило обновления весов:
+```R
+w <- w - eta * (wx - yi) * xi 
+```
 Работа алгоритма:
 
 ![Где картинка?](linear/adaline.png?raw=true "Optional Title")
@@ -635,6 +646,18 @@ return (w)
 
 Имеет кусочно-линейную функцию потерь ![Где картинка?](linear/l9.svg?raw=true "Optional Title") и правило Хебба для обновления весов ![Где картинка?](linear/l10.svg?raw=true "Optional Title") 
 
+Программная реализация функции потерь:
+```R
+lossPerceptron <- function(x) 
+{  
+  return (max(-x, 0))  
+}
+```
+
+Правило обновления весов:
+```R
+ w <- w + eta * yi * xi  
+```
 Работа алгоритма:
 
 ![Где картинка?](linear/pers.png?raw=true "Optional Title")
@@ -643,6 +666,23 @@ return (w)
 
 Имеет логистическую функцию потерь ![Где картинка?](linear/l11.svg?raw=true "Optional Title") и логистическое правило обновления весов ![Где картинка?](linear/l12.svg?raw=true "Optional Title"), где ![Где картинка?](linear/l13.svg?raw=true "Optional Title") -  сигмоидная функция.
 
+Программная реализация функции потерь и сигмоидной функции:
+```R
+## Логарифмическая функция потерь
+lossSigmoid <- function(x)
+{
+  return (log2(1 + exp(-x))) 
+}
+## Сигмоидная функция
+sigmoidFunction <- function(z)
+{
+  return (1 / (1 + exp(-z)))
+}
+```
+Правило обновления весов:
+```R
+w <- w + eta * xi * yi * sigmoidFunction(-wx * yi)
+```
 Работа алгоритма:
 
 ![Где картинка?](linear/logistic.png?raw=true "Optional Title")
